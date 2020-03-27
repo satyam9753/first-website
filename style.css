@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 /* ------------------------Navigation Bar------------------------- */
 #nav-bar
 {
@@ -100,4 +99,156 @@
 {
     border-radius: 16px!important;
     margin-bottom: 20px;
+}
+
+/* ------------------OUR PROJECTS--------------------- */
+#services
+{
+    background-image: url(img/try.jpg);
+    background-size: cover ;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+#services h2
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 8px;
+    
+}
+#services h2::after
+{
+    content: '';
+    background-color: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+#services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding:20px;
+    height:80px;
+    width: 80px;
+    border: 0.8px solid #fff !important;
+    border-radius: 45%;
+}
+#services p
+{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #cccccc;
+}
+.services .col-md-3:hover{
+    background: #008bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/* ---------------TEAM MEMBERS---------------------- */
+#team
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+h2
+{
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+h2::after{
+    content: '';
+    background: #555555!important;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic
+{
+    margin-top: 25px;
+}
+.profile-pic .img-box
+{
+    opacity:1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img
+{
+    filter: grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #087bff !important;
+}
+.profile-pic h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#team .fa
+{
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 45%;
+}
+.img-box ul
+{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul
+{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li
+{
+    transition: 0.4s;
+}
+
+/* PROMO */
+#promo
+{
+   background-image: url(img/promo.jpg);
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+   background-attachment: fixed;
+   text-align: center;
+   padding: 90px;
+   font-family: sans-serif;
+   font-size: 25px;
 }
