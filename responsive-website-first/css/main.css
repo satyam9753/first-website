@@ -1,0 +1,247 @@
+/*------ Use MEDIA QUERIES for responsive design. ------*/
+
+/* ----------------- https://fonts.google.com/ ------------------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+ 
+/* SETTING CUSTOM PROPERTIES */
+/* :root
+{
+    --leading: 2em;     ---------------->> acts like a variable
+} */
+
+
+body
+{
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+}
+
+.hero-bg
+{
+    background: #777777 url('../images/one.jpg');
+    background-size: cover;
+    background-position: 12% 83%;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+header
+{
+    padding: 1em 0;
+}
+
+.hero-bg a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section
+{
+    margin: 0 1em;
+}
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+h1 span
+{
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+h1 span::before
+{ 
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background-color: blue;
+    height: 0.7em;
+    bottom: 0;
+    z-index: -1;
+}
+.hero-bg p
+{
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+.form-container
+{
+    background-color: white;
+    padding: 2em;
+    margin: 2em -1em 0;
+}
+label
+{
+    color: grey;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type = text]
+{
+    border: 1px solid gray;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 0.6em;
+    margin-top: 1.2em;
+}
+.form-container p
+{
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    margin-top: 0.3em;
+    font-size: 0.9em;
+}
+
+input[type = button]
+{
+    background-color: red;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: 0.6em;
+    font-size: 1.35em;
+    cursor: pointer;
+}
+
+input[type = button]:hover
+{
+    background-color: maroon;
+}
+.authentic
+{
+    margin: 0;
+}
+.right-col
+{
+    text-align: center;
+    margin: 3em 1em;
+}
+h2
+{
+    text-transform: uppercase;
+    position: relative;
+}
+h2 ::before
+{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background-color: blue;
+    height: 0.7em;
+    bottom: 0;
+    z-index: -1;
+}
+img
+{
+    width: 100%;  /* this makes it a responsive image */
+}
+p
+{
+    /* line-height: var(--leading); */     /*acts like a variable*/
+    line-height: 2em;
+}
+@media (min-width :700px)
+{
+    section
+    {
+        margin: 0 4em;
+    }
+    .form-container
+    {
+        margin: 2em -4em 0;
+    }
+}
+
+@media (min-width :930px)
+{
+    .hero-bg
+    {
+        text-align: left;
+    }
+    .hero-bg h1
+    {
+        margin-left: 1em;
+    }
+    .hero-bg p
+    {
+        font-weight: bold;
+        margin: 0 0 3em;
+        margin-left: 1.2em;
+    }
+    .hero-bg section
+    {
+        width: 55%;
+    }
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    }
+
+    form{
+        display: flex;
+    }
+    .form-left {
+        width: 70%;
+    }
+    label{ margin: 0;}
+
+    input[type= "button"]
+    {
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2.2em;
+        padding: .7em 0;
+        width: 30%;
+    }
+    .hero-bg p{ margin-bottom: 0;}
+
+    section.authentic{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "tandoor content";
+    }
+
+    .right-col{
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+    img{
+        grid-area: tandoor;
+    }
+    h2{
+        margin: 0;
+    }
+}
+
+.top
+{
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn
+{
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
