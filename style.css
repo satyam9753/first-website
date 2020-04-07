@@ -30,7 +30,7 @@
 {
     cursor: pointer;
     color: #007bff!important;
-    text-size: small;
+    text-size: large;
 }
 .navbar
 {
@@ -187,11 +187,12 @@
 }
 
 /* ---------------TEAM MEMBERS---------------------- */
-#team
+/* #team
 {
     padding-top: 50px;
     padding-bottom: 50px;
     color:#555;
+    background-color: #efefef;
 }
 h2
 {
@@ -269,6 +270,144 @@ h2::after{
 .img-box ul, .img-box ul li
 {
     transition: 0.4s;
+} */
+
+/* --------------------------------------------------------------- */
+/* TESTIMONIALS */
+#testimonial
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+h2
+{
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+h2::after{
+    content: '';
+    background: #087bff!important;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+#testimonial .row
+{
+    margin-top: 30px;
+}
+.col-md-4
+{
+    margin: 40px auto;
+}
+.profile
+{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+.user
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img
+{
+    top: -60px;
+    position : absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+.profile h3
+{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonial span
+{
+    font-size: 12px;
+    color: #333;
+}
+blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote::before
+{
+    content: '\201C';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+blockquote::after
+{
+    content: '\201D';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+.profile:hover
+{ 
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* -------------------------------------------------------------- */
+/* GET IN TOUCH */
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+.contact-form
+{
+    padding: 15px;
+}
+.form-control
+{
+    border-radius: 0;
+    border: none!important;
+}
+::placeholder
+{
+    color: #999!important;
+}
+.follow
+{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* --------FOOTER-------- */
+#footer
+{
+    background: black;
+    color: #fff;
+    padding: 12px;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
 }
 
 /* PROMO */
@@ -277,6 +416,7 @@ h2::after{
    background-image: url(img/promo.jpg);
    background-size: cover;
    background-position: center;
+   margin-top: 10em;
    color: #ffffff;
    background-attachment: fixed;
    text-align: center;
